@@ -1,0 +1,357 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f4f7fc;
+    color: #1e293b;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    padding: 2rem 2rem 2.5rem;
+    transition: all 0.2s ease;
+}
+
+/* Header */
+.profile-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e9edf4;
+    padding-bottom: 1.75rem;
+}
+
+.name-title h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #0b1e33;
+    line-height: 1.2;
+}
+
+.name-title .badge {
+    display: inline-block;
+    background: #eef3ff;
+    color: #1f4f8a;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.2rem 1rem;
+    border-radius: 30px;
+    margin-top: 0.4rem;
+    letter-spacing: 0.3px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.8rem;
+    font-size: 0.95rem;
+    background: #f8faff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 60px;
+    align-items: center;
+}
+
+.contact-links a {
+    color: #1e293b;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s;
+    font-weight: 500;
+}
+
+.contact-links a i {
+    color: #2a6bb0;
+    width: 1.2rem;
+    font-size: 1rem;
+}
+
+.contact-links a:hover {
+    color: #0a4a8a;
+}
+
+/* Grid Layout */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #f9fcff;
+    border-radius: 24px;
+    padding: 1.6rem 1.4rem;
+    border: 1px solid #eef2f9;
+}
+
+.sidebar-section {
+    margin-bottom: 2.2rem;
+}
+
+.sidebar-section h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    color: #396a9e;
+    margin-bottom: 0.9rem;
+    border-bottom: 1px solid #dce5ef;
+    padding-bottom: 0.4rem;
+}
+
+.edu-item {
+    margin-bottom: 1.2rem;
+}
+
+.edu-item strong {
+    font-weight: 700;
+    display: block;
+    color: #0b1e33;
+}
+
+.edu-item .meta {
+    font-size: 0.9rem;
+    color: #3f5570;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.edu-item .highlight {
+    background: #e4edfa;
+    color: #1b4b7a;
+    padding: 0.1rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.lang-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+    font-size: 0.95rem;
+    border-bottom: 1px dashed #e2eaf3;
+}
+
+.lang-item:last-child {
+    border: none;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.skill-tags span {
+    background: #eef3fa;
+    padding: 0.2rem 0.9rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1a3e61;
+    letter-spacing: 0.2px;
+}
+
+.leadership-list {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.leadership-list li {
+    margin-bottom: 0.4rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.leadership-list i {
+    color: #2a6bb0;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+.funded-box {
+    background: #eaf1fb;
+    border-radius: 18px;
+    padding: 1rem 1.4rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.funded-box strong {
+    display: block;
+    font-size: 1rem;
+}
+
+.funded-box .pi {
+    font-weight: 600;
+    color: #1e4d7a;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-section {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 0 0 0.2rem 0;
+}
+
+.card-section h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0b1e33;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-bottom: 1px solid #e9edf4;
+    padding-bottom: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.card-section h2 i {
+    color: #2a6bb0;
+    font-size: 1.2rem;
+    width: 1.8rem;
+}
+
+.appointment-item {
+    margin-bottom: 1.4rem;
+}
+
+.appointment-item .title {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.appointment-item .org {
+    font-weight: 500;
+    color: #1a3e61;
+}
+
+.appointment-item .date {
+    font-size: 0.85rem;
+    color: #5f738d;
+    margin: 0.2rem 0 0.3rem;
+    font-weight: 500;
+}
+
+.appointment-item p {
+    font-size: 0.95rem;
+    color: #1e334a;
+    margin-top: 0.25rem;
+}
+
+.pub-item {
+    margin-bottom: 1.1rem;
+    font-size: 0.95rem;
+    border-left: 3px solid #cbdae9;
+    padding-left: 1rem;
+}
+
+.pub-item strong {
+    font-weight: 700;
+    color: #0b1e33;
+}
+
+.pub-item .doi {
+    display: block;
+    font-size: 0.8rem;
+    color: #30649b;
+    margin-top: 0.15rem;
+    word-break: break-all;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem 1.2rem;
+    margin-top: 0.3rem;
+}
+
+.project-grid .proj {
+    background: #f6faff;
+    padding: 0.5rem 0.8rem;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1b3a5a;
+    border: 1px solid #e2ebf6;
+}
+
+.project-grid .proj i {
+    color: #2a6bb0;
+    margin-right: 0.4rem;
+}
+
+/* Footer */
+.footer {
+    margin-top: 2.5rem;
+    border-top: 1px solid #e2eaf3;
+    padding-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #4e6885;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .profile-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .contact-links {
+        border-radius: 30px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .name-title h1 {
+        font-size: 2rem;
+    }
+    .contact-links {
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+        gap: 0.6rem 1rem;
+    }
+}
